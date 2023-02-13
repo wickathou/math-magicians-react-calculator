@@ -1,1 +1,1 @@
-export default "/dist/logo.svg";
+export default "/math-magicians-react-calculator/dist/logo.svg";
