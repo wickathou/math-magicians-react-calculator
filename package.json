@@ -1,0 +1,50 @@
+{
+  "name": "math-magicians-react-calculator",
+  "version": "1.0.0",
+  "description": "A calcultator app built with React",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "web-test-runner \"src/**/*.test.jsx\"",
+    "prettier-format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "prettier-lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "deploy": "gh-pages -d build",
+    "css-linter": "npx stylelint \"**/*.{css,scss}\"",
+    "js-linter": "npx eslint \"**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wickathou/math-magicians-react-calculator.git"
+  },
+  "author": "wickathou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wickathou/math-magicians-react-calculator/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@snowpack/plugin-babel": "^2.1.7",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "snowpack": "^3.3.7",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
