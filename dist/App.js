@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "../snowpack/pkg/react.js";
-import logo from "./logo.svg.proxy.js";
 import "./App.css.proxy.js";
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +11,7 @@ function App() {
   }, /* @__PURE__ */ React.createElement("header", {
     className: "App-header"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: logo,
+    src: "dist/logo.svg",
     className: "App-logo",
     alt: "logo"
   }), /* @__PURE__ */ React.createElement("p", null, "Edit ", /* @__PURE__ */ React.createElement("code", null, "src/App.jsx"), " and save to reload."), /* @__PURE__ */ React.createElement("p", null, "Page has been open for ", /* @__PURE__ */ React.createElement("code", null, count), " seconds."), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("a", {
