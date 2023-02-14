@@ -2,9 +2,11 @@ import React from 'react';
 import '../App.css';
 
 function Button(prop) {
+  const { className } = prop;
+  const { identifier } = prop;
   return (
-    <div className={prop.className}>
-      <h2>{prop.identifier}</h2>
+    <div className={className}>
+      <h2>{identifier}</h2>
     </div>
   );
 }

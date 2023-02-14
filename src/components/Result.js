@@ -2,9 +2,11 @@ import React from 'react';
 import '../App.css';
 
 function Result(prop) {
+  const { className } = prop;
+  const { result } = prop;
   return (
-    <div className={prop.className}>
-      <h2>{prop.result}</h2>
+    <div className={className}>
+      <h2>{result}</h2>
     </div>
   );
 }
