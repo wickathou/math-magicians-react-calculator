@@ -1,9 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function Result(prop) {
-  const { className } = prop;
-  const { result } = prop;
+function Result({className, result}) {
   return (
     <div className={className}>
       <h2>{result}</h2>
