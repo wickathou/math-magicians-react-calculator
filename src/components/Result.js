@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 
-function Result({className, result}) {
+function Result({className, display}) {
   return (
     <div className={className}>
-      <h2>{result}</h2>
+      <h2>{display ? display : 0}</h2>
     </div>
   );
 }

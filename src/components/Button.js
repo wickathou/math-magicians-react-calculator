@@ -1,10 +1,11 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 import '../App.css';
 
-function Button({className, identifier}) {
+function Button({className, onClickAction, buttonName}) {
   return (
-    <div className={className}>
-      <h2>{identifier}</h2>
+    <div className={className} onClick={onClickAction}>
+      <h2>{buttonName}</h2>
     </div>
   );
 }
