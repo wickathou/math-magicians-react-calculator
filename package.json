@@ -13,6 +13,7 @@
     "js-linter": "npx eslint \"**/*.{js,jsx}\""
   },
   "dependencies": {
+    "big.js": "^6.2.1",
     "gh-pages": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
