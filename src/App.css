@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .regular-button {
+    @apply box-border border-2 border-neutral-400 col-span-1 bg-indigo-500 flex justify-center items-center
+  }
+  .wide-button {
+    @apply box-border border-2 border-neutral-400 col-span-2 bg-indigo-500 flex justify-center items-center
+  }
+  .display {
+    @apply box-border border-2 border-neutral-400 col-span-4 bg-indigo-500 flex justify-center items-center text-white
+  }
+  .action-color {
+    @apply bg-orange-500
+  }
+  .number-color {
+    @apply bg-stone-200
+  }
+  .display-color {
+    @apply bg-neutral-800
+  }
+  .calculator-style {
+    @apply grid grid-cols-4 w-80 h-80 box-border border-4 border-neutral-400
+  }
+  .display-style {
+    @apply display display-color
+  }
+  .reg-btn {
+    @apply regular-button number-color
+  }
+  .act-btn {
+    @apply regular-button action-color
+  }
+  .wide-btn {
+    @apply wide-button number-color
+  }
+}

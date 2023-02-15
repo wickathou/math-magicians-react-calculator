@@ -1,5 +1,4 @@
 import React from 'react';
-import calculate from '../logic/calculate';
 import '../App.css';
 
 function Button({className, onClickAction, buttonName}) {
