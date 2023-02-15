@@ -19,7 +19,7 @@ function Calculator() {
       <Button className={`${regularButton} ${numberColor}`} identifier="AC" />
       <Button className={`${regularButton} ${numberColor}`} identifier="+/-" />
       <Button className={`${regularButton} ${numberColor}`} identifier="%" />
-      <Button className={`${regularButton} ${actionColor}`} identifier="/" />
+      <Button className={`${regularButton} ${actionColor}`} identifier="÷" />
 
       <Button className={`${regularButton} ${numberColor}`} identifier="7" />
       <Button className={`${regularButton} ${numberColor}`} identifier="8" />
