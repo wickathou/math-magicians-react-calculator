@@ -17,7 +17,7 @@ const keys = {
   num7: '7',
   num8: '8',
   num9: '9',
-  num0: '0'
-}
+  num0: '0',
+};
 
-export default keys
+export default keys;
