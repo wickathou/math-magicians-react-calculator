@@ -1,14 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../App.css';
 
-function Button(prop) {
-  const { className } = prop;
-  const { identifier } = prop;
+function Button({ className, onClickAction, buttonName }) {
   return (
-    <div className={className}>
-      <h2>{identifier}</h2>
-    </div>
+    <button type="button" className={className} onClick={onClickAction}>
+      <h2>{buttonName}</h2>
+    </button>
   );
 }
+
+Button.propTypes = {
+  className: PropTypes.string.isRequired,
+  onClickAction: PropTypes.func.isRequired,
+  buttonName: PropTypes.string.isRequired,
+};
 
 export default Button;

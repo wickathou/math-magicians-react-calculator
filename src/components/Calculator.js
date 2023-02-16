@@ -1,44 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 import Result from './Result';
+import calculate from '../logic/calculate';
+import keys from '../util/keys';
 import '../App.css';
 
 function Calculator() {
-  const regularButton = 'box-border border-2 border-neutral-400 col-span-1 bg-indigo-500 flex justify-center items-center';
-  const wideButton = 'box-border border-2 border-neutral-400 col-span-2 bg-indigo-500 flex justify-center items-center';
-  const display = 'box-border border-2 border-neutral-400 col-span-4 bg-indigo-500 flex justify-center items-center text-white';
-  const actionColor = 'bg-orange-500';
-  const numberColor = 'bg-stone-200';
-  const displayColor = 'bg-neutral-800';
-  const calculatorStyle = 'grid grid-cols-4 w-80 h-80 box-border border-4 border-neutral-400';
+  const [calculation, setCalculation] = useState({ total: null, next: null, operation: null });
+
+  function handleClick(buttonName) {
+    const { total, next, operation } = calculate(calculation, buttonName);
+    setCalculation({ total, next, operation });
+  }
 
   return (
-    <div className={calculatorStyle}>
-      <Result className={`${display} ${displayColor}`} result="Calculator" />
+    <div className="calculator-style">
+      <Result className="display-style" display={calculation.next ? calculation.next : calculation.total} />
 
-      <Button className={`${regularButton} ${numberColor}`} identifier="AC" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="+/-" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="%" />
-      <Button className={`${regularButton} ${actionColor}`} identifier="÷" />
+      <Button className="reg-btn" buttonName={keys.ac} onClickAction={() => handleClick(keys.ac)} />
+      <Button className="reg-btn" buttonName={keys.pm} onClickAction={() => handleClick(keys.pm)} />
+      <Button className="reg-btn" buttonName={keys.perc} onClickAction={() => handleClick(keys.perc)} />
+      <Button className="act-btn" buttonName={keys.div} onClickAction={() => handleClick(keys.div)} />
 
-      <Button className={`${regularButton} ${numberColor}`} identifier="7" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="8" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="9" />
-      <Button className={`${regularButton} ${actionColor}`} identifier="x" />
+      <Button className="reg-btn" buttonName={keys.num7} onClickAction={() => handleClick(keys.num7)} />
+      <Button className="reg-btn" buttonName={keys.num8} onClickAction={() => handleClick(keys.num8)} />
+      <Button className="reg-btn" buttonName={keys.num9} onClickAction={() => handleClick(keys.num9)} />
+      <Button className="act-btn" buttonName={keys.mul} onClickAction={() => handleClick(keys.mul)} />
 
-      <Button className={`${regularButton} ${numberColor}`} identifier="4" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="5" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="6" />
-      <Button className={`${regularButton} ${actionColor}`} identifier="-" />
+      <Button className="reg-btn" buttonName={keys.num4} onClickAction={() => handleClick(keys.num4)} />
+      <Button className="reg-btn" buttonName={keys.num5} onClickAction={() => handleClick(keys.num5)} />
+      <Button className="reg-btn" buttonName={keys.num6} onClickAction={() => handleClick(keys.num6)} />
+      <Button className="act-btn" buttonName={keys.subs} onClickAction={() => handleClick(keys.subs)} />
 
-      <Button className={`${regularButton} ${numberColor}`} identifier="1" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="2" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="3" />
-      <Button className={`${regularButton} ${actionColor}`} identifier="+" />
+      <Button className="reg-btn" buttonName={keys.num1} onClickAction={() => handleClick(keys.num1)} />
+      <Button className="reg-btn" buttonName={keys.num2} onClickAction={() => handleClick(keys.num2)} />
+      <Button className="reg-btn" buttonName={keys.num3} onClickAction={() => handleClick(keys.num3)} />
+      <Button className="act-btn" buttonName={keys.sum} onClickAction={() => handleClick(keys.sum)} />
 
-      <Button className={`${wideButton} ${numberColor}`} identifier="0" />
-      <Button className={`${regularButton} ${numberColor}`} identifier="." />
-      <Button className={`${regularButton} ${actionColor}`} identifier="=" />
+      <Button className="wide-btn" buttonName={keys.num0} onClickAction={() => handleClick(keys.num0)} />
+      <Button className="reg-btn" buttonName={keys.dot} onClickAction={() => handleClick(keys.dot)} />
+      <Button className="act-btn" buttonName={keys.equal} onClickAction={() => handleClick(keys.equal)} />
     </div>
   );
 }
