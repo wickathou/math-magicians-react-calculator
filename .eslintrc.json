@@ -22,6 +22,9 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/"
+    "build/",
+    "snowpack.config.js",
+    "postcss.config.js",
+    "tailwind.config.js"
   ]
 }

@@ -10,6 +10,7 @@
     - [Setup](#setup)
     - [Usage](#usage)
   - [👥 Author ](#-author-)
+  - [✅ Current Features ](#-current-features-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -64,9 +65,13 @@ To run the tests, use the command
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Portfolio: [End Design Co.](https://works.enddesign.co/)
 
+## ✅ Current Features <a name="current-features"></a>
+
+- [Done] **[Visual interface for calculator]**
+- [Done] **[Capability to perform arithmetic operations]**
+
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Visual interface for calculator]**
 - [ ] **[Separate webapp views]**
 
 ## 🤝 Contributing <a name="contributing"></a>
