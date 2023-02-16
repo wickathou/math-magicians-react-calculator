@@ -1,8 +1,8 @@
-import { r as react } from './common/index-b8f15908.js';
-export { r as default } from './common/index-b8f15908.js';
+import { r as react } from './common/index-87942afd.js';
+export { r as default } from './common/index-87942afd.js';
+import './common/_commonjsHelpers-668e6127.js';
 
 
 
-var useEffect = react.useEffect;
 var useState = react.useState;
-export { useEffect, useState };
+export { useState };
