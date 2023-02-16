@@ -5,9 +5,6 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.jsx\"",
-    "prettier-format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "prettier-lint": "prettier --check \"src/**/*.{js,jsx}\"",
     "deploy": "gh-pages -d build",
     "css-linter": "npx stylelint \"**/*.{css,scss}\"",
     "js-linter": "npx eslint \"**/*.{js,jsx}\""
