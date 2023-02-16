@@ -4,7 +4,7 @@ import '../App.css';
 
 function Button({ className, onClickAction, buttonName }) {
   return (
-    <button type="button" className={className} onClick={onClickAction}>
+    <button className={className} onClick={onClickAction}>
       <h2>{buttonName}</h2>
     </button>
   );
