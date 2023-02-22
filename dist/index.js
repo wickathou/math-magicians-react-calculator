@@ -1,4 +1,4 @@
-// build/math-magicians-react-calculator/dist/pkg/common/_commonjsHelpers-668e6127.js
+// build/dist/pkg/common/_commonjsHelpers-668e6127.js
 function createCommonjsModule(fn, basedir, module) {
   return module = {
     path: basedir,
@@ -12,7 +12,7 @@ function commonjsRequire() {
   throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs");
 }
 
-// build/math-magicians-react-calculator/dist/pkg/common/index-2759f8a2.js
+// build/dist/pkg/common/index-2759f8a2.js
 /*
 object-assign
 (c) Sindre Sorhus
@@ -447,10 +447,10 @@ var React = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.assign(/* @__PU
   default: react
 }));
 
-// build/math-magicians-react-calculator/dist/pkg/react.js
+// build/dist/pkg/react.js
 var useState = react.useState;
 
-// build/math-magicians-react-calculator/dist/pkg/react-dom.js
+// build/dist/pkg/react-dom.js
 var scheduler_production_min = createCommonjsModule(function(module, exports) {
   var f, g, h, k;
   if (typeof performance === "object" && typeof performance.now === "function") {
@@ -7546,7 +7546,7 @@ var reactDom = createCommonjsModule(function(module) {
 });
 var react_dom_default = reactDom;
 
-// build/math-magicians-react-calculator/dist/pkg/react-router-dom.js
+// build/dist/pkg/react-router-dom.js
 /**
  * @remix-run/router v1.3.2
  *
@@ -8793,7 +8793,7 @@ function Home() {
 }
 var Home_default = Home;
 
-// build/math-magicians-react-calculator/dist/pkg/prop-types.js
+// build/dist/pkg/prop-types.js
 var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
 var ReactPropTypesSecret_1 = ReactPropTypesSecret;
 function emptyFunction() {
@@ -8881,7 +8881,7 @@ Result.propTypes = {
 };
 var Result_default = Result;
 
-// build/math-magicians-react-calculator/dist/pkg/bigjs.js
+// build/dist/pkg/bigjs.js
 var DP = 20;
 var RM = 1;
 var MAX_DP = 1e6;
@@ -9759,7 +9759,5 @@ function App() {
 var App_default = App;
 
 // build/dist/index.js
-react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(BrowserRouter, {
-  basename: void 0
-}, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
+react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(BrowserRouter, null, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
 //# sourceMappingURL=index.js.map
