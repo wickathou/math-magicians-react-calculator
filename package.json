@@ -6,8 +6,6 @@
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
-    "prettier-format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "prettier-lint": "prettier --check \"src/**/*.{js,jsx}\"",
     "deploy": "gh-pages -d build",
     "css-linter": "npx stylelint \"**/*.{css,scss}\"",
     "js-linter": "npx eslint \"**/*.{js,jsx}\""
@@ -46,6 +44,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
     "snowpack": "^3.3.7",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

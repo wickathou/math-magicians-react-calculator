@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Button from './Button';
-import Result from './Result';
+import Button from '../components/Button';
+import Result from '../components/Result';
 import calculate from '../logic/calculate';
 import keys from '../util/keys';
 import '../App.css';
