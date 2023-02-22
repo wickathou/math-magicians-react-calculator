@@ -9759,5 +9759,7 @@ function App() {
 var App_default = App;
 
 // build/dist/index.js
-react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(BrowserRouter, null, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
+react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(BrowserRouter, {
+  basename: void 0
+}, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
 //# sourceMappingURL=index.js.map
