@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Link, Outlet, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './routes/Home';
 import Calculator from './routes/Calculator';
 import Layout from './components/Layout';
@@ -14,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/calc' element={<Calculator />} />
           <Route path='/quote' element={<Quote />} />
+          <Route path='/*' element={<Navigate to="/" replace={true} />} />
         </Route>
       </Routes>
     </>

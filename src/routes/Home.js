@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Home(params) {
+function Home({message}) {
   return (
     <>
       <p className='text-2xl'>
