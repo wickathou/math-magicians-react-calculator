@@ -8494,6 +8494,28 @@ function useRouteError() {
   }
   return (_state$errors = state.errors) == null ? void 0 : _state$errors[routeId];
 }
+function Navigate(_ref3) {
+  let {
+    to,
+    replace,
+    state,
+    relative
+  } = _ref3;
+  !useInRouterContext() ? invariant(false) : void 0;
+  let dataRouterState = react.useContext(DataRouterStateContext);
+  let navigate = useNavigate();
+  react.useEffect(() => {
+    if (dataRouterState && dataRouterState.navigation.state !== "idle") {
+      return;
+    }
+    navigate(to, {
+      replace,
+      state,
+      relative
+    });
+  });
+  return null;
+}
 function Outlet(props) {
   return useOutlet(props.context);
 }
@@ -9727,6 +9749,11 @@ function App() {
   }), /* @__PURE__ */ react.createElement(Route, {
     path: "/quote",
     element: /* @__PURE__ */ react.createElement(Quote_default, null)
+  }), /* @__PURE__ */ react.createElement(Route, {
+    path: "/*",
+    element: /* @__PURE__ */ react.createElement(Navigate, {
+      to: "/"
+    })
   }))));
 }
 var App_default = App;
