@@ -7578,50 +7578,30 @@ var Action;
   Action2["Replace"] = "REPLACE";
 })(Action || (Action = {}));
 var PopStateEventType = "popstate";
-function createHashHistory(options) {
+function createBrowserHistory(options) {
   if (options === void 0) {
     options = {};
   }
-  function createHashLocation(window2, globalHistory) {
+  function createBrowserLocation(window2, globalHistory) {
     let {
-      pathname = "/",
-      search = "",
-      hash = ""
-    } = parsePath(window2.location.hash.substr(1));
+      pathname,
+      search,
+      hash
+    } = window2.location;
     return createLocation("", {
       pathname,
       search,
       hash
     }, globalHistory.state && globalHistory.state.usr || null, globalHistory.state && globalHistory.state.key || "default");
   }
-  function createHashHref(window2, to) {
-    let base = window2.document.querySelector("base");
-    let href = "";
-    if (base && base.getAttribute("href")) {
-      let url = window2.location.href;
-      let hashIndex = url.indexOf("#");
-      href = hashIndex === -1 ? url : url.slice(0, hashIndex);
-    }
-    return href + "#" + (typeof to === "string" ? to : createPath(to));
+  function createBrowserHref(window2, to) {
+    return typeof to === "string" ? to : createPath(to);
   }
-  function validateHashLocation(location, to) {
-    warning$1(location.pathname.charAt(0) === "/", "relative pathnames are not supported in hash history.push(" + JSON.stringify(to) + ")");
-  }
-  return getUrlBasedHistory(createHashLocation, createHashHref, validateHashLocation, options);
+  return getUrlBasedHistory(createBrowserLocation, createBrowserHref, null, options);
 }
 function invariant(value, message) {
   if (value === false || value === null || typeof value === "undefined") {
     throw new Error(message);
-  }
-}
-function warning$1(cond, message) {
-  if (!cond) {
-    if (typeof console !== "undefined")
-      console.warn(message);
-    try {
-      throw new Error(message);
-    } catch (e) {
-    }
   }
 }
 function createKey() {
@@ -8692,15 +8672,15 @@ function shouldProcessLinkClick(event, target) {
   return event.button === 0 && (!target || target === "_self") && !isModifiedEvent(event);
 }
 var _excluded = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset"];
-function HashRouter(_ref2) {
+function BrowserRouter(_ref) {
   let {
     basename,
     children,
     window: window2
-  } = _ref2;
+  } = _ref;
   let historyRef = react.useRef();
   if (historyRef.current == null) {
-    historyRef.current = createHashHistory({
+    historyRef.current = createBrowserHistory({
       window: window2,
       v5Compat: true
     });
@@ -9780,5 +9760,5 @@ function App() {
 var App_default = App;
 
 // build/dist/index.js
-react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(HashRouter, null, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
+react_dom_default.render(/* @__PURE__ */ react.createElement(react.StrictMode, null, /* @__PURE__ */ react.createElement(BrowserRouter, null, /* @__PURE__ */ react.createElement(App_default, null))), document.getElementById("root"));
 //# sourceMappingURL=index.js.map
