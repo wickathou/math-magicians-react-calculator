@@ -1,6 +1,6 @@
 import React, { useState } from '../../snowpack/pkg/react.js';
-import Button from './Button.js';
-import Result from './Result.js';
+import Button from '../components/Button.js';
+import Result from '../components/Result.js';
 import calculate from '../logic/calculate.js';
 import keys from '../util/keys.js';
 import '../App.css.proxy.js';
