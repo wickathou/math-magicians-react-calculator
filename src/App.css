@@ -46,4 +46,12 @@
   .wide-btn {
     @apply wide-button number-color;
   }
+
+  .layout {
+    @apply flex flex-col justify-center items-center h-[70vh] max-w-[70%] mx-auto;
+  }
+
+  .navbar {
+    @apply w-[70%] h-20 flex justify-between items-center mx-auto text-white;
+  }
 }

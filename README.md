@@ -69,10 +69,11 @@ To run the tests, use the command
 
 - [Done] **[Visual interface for calculator]**
 - [Done] **[Capability to perform arithmetic operations]**
+- [Done] **[Separate webapp views]**
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Separate webapp views]**
+- [ ] **[Improve visual design]**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
