@@ -21,6 +21,5 @@ export default {
   },
   buildOptions: {
     metaUrlPath: 'snowpack',
-    baseUrl: '/math-magicians-react-calculator/'
   },
 };
