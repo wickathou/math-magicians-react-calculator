@@ -21,5 +21,6 @@ export default {
   },
   buildOptions: {
     metaUrlPath: 'snowpack',
+    baseUrl: 'https://math-magicians-react-calculator-ci7u.onrender.com/'
   },
 };
