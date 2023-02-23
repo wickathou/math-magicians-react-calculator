@@ -2,6 +2,7 @@
   "name": "math-magicians-react-calculator",
   "version": "1.0.0",
   "description": "A calcultator app built with React",
+  "homepage": "https://math-magicians-react-calculator-ci7u.onrender.com/",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
