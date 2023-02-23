@@ -14,7 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/calc" element={<Calculator />} />
           <Route path="/quote" element={<Quote />} />
-          <Route path="/*" element={<Navigate to="/" replace />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </>
