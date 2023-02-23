@@ -9,7 +9,8 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
-  - [👥 Author ](#-author-)
+  - [� Author ](#-author-)
+  - [👥 Collaborators ](#-collaborators-)
   - [✅ Current Features ](#-current-features-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -57,19 +58,27 @@ To run the project, use the command
 To run the tests, use the command
 `npm run test`
 
-## 👥 Author <a name="author"></a>
+## 👤 Author <a name="author"></a>
 
-👤 **Javier Hernandez**
+**Javier Hernandez**
 
 - GitHub: [@wickathou](https://github.com/wickathou)
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Portfolio: [End Design Co.](https://works.enddesign.co/)
+
+## 👥 Collaborators <a name="author"></a>
+
+**Issah Mudasir**
+
+- GitHub: [@mudasiri](https://github.com/mudasiri)
+- LinkedIn: [@javierjhm](https://www.linkedin.com/in/issah-mudasir-159a0ab1)
 
 ## ✅ Current Features <a name="current-features"></a>
 
 - [Done] **[Visual interface for calculator]**
 - [Done] **[Capability to perform arithmetic operations]**
 - [Done] **[Separate webapp views]**
+- [Done] **[Unit test with Jest and Testing Library]**
 
 ## 🔭 Future Features <a name="future-features"></a>
 
