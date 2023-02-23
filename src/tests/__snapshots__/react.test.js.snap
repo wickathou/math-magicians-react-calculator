@@ -1,9 +1,249 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`calculate tests for different button inputs renders Calculator element correctly 1`] = `
+<div
+  className="calculator-style"
+>
+  <div
+    className="display-style"
+  >
+    <h2
+      role="dialog"
+    >
+      0
+    </h2>
+  </div>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="AC"
+    >
+      AC
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="+/-"
+    >
+      +/-
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="%"
+    >
+      %
+    </h2>
+  </button>
+  <button
+    className="act-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="÷"
+    >
+      ÷
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="7"
+    >
+      7
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="8"
+    >
+      8
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="9"
+    >
+      9
+    </h2>
+  </button>
+  <button
+    className="act-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="x"
+    >
+      x
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="4"
+    >
+      4
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="5"
+    >
+      5
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="6"
+    >
+      6
+    </h2>
+  </button>
+  <button
+    className="act-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="-"
+    >
+      -
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="1"
+    >
+      1
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="2"
+    >
+      2
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="3"
+    >
+      3
+    </h2>
+  </button>
+  <button
+    className="act-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="+"
+    >
+      +
+    </h2>
+  </button>
+  <button
+    className="wide-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="0"
+    >
+      0
+    </h2>
+  </button>
+  <button
+    className="reg-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="."
+    >
+      .
+    </h2>
+  </button>
+  <button
+    className="act-btn"
+    onClick={[Function]}
+    type="button"
+  >
+    <h2
+      role="="
+    >
+      =
+    </h2>
+  </button>
+</div>
+`;
+
+exports[`calculate tests for different button inputs renders Home element correctly 1`] = `
 <p
   className="text-2xl"
 >
   This calculator app is a web-based application built using the popular React framework for creating user interfaces, Snowpack for faster and more efficient development, and Tailwind for easy and customizable styling. This calculator app allows users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division, as well as calculate percentages and clear the current value. The interface is designed to be user-friendly and responsive, allowing for easy input and output on a range of devices. With the power of React, the app ensures fast and seamless user experience, while Snowpack and Tailwind make development and styling a breeze.
 </p>
+`;
+
+exports[`calculate tests for different button inputs renders Quote element correctly 1`] = `
+[
+  <h2
+    className="font-bold text-lg"
+  >
+    "Pure mathematics is, in its way, the poetry of logical ideas."
+  </h2>,
+  <h3
+    className="mt-4"
+  >
+    Albert Einstein
+  </h3>,
+]
 `;
