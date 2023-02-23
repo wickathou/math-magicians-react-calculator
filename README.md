@@ -9,7 +9,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
-  - [� Author ](#-author-)
+  - [👤 Author ](#-author-)
   - [👥 Collaborators ](#-collaborators-)
   - [✅ Current Features ](#-current-features-)
   - [🔭 Future Features ](#-future-features-)
@@ -32,7 +32,11 @@ Snowpack | Tailwind | React | GH pages | Jest
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+On GH-pages
 - [Live Demo Link](https://wickathou.github.io/math-magicians-react-calculator/)
+
+On Render
+- [Live Render demo](https://math-magicians-react-calculator-ci7u.onrender.com/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
